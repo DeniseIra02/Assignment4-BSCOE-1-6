@@ -8,3 +8,11 @@ def getAplOrngPriceTotal(quantApl, quantOrng):
     _orngPrice = quantOrng * 25 
     overallTtl = _aplPrice + _orngPrice
     return overallTtl
+
+def display(totalF):
+    print(f"The total amount is {totalF} pesos.")
+
+aplQuant, orngQuant = getAplOrng()
+total = getAplOrngPriceTotal(aplQuant, orngQuant)
+
+display(total)
